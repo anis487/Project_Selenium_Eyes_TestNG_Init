@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Testng Cucumber Suite" parallel="tests">
+	  <test name="ChromeTest">
+	 	<parameter name="browser" value= "chrome" ></parameter>	
+		  <classes>
+			  <class name="Com.Cristal.Runner.TestRunner" ></class>			 
+		  </classes> 
+	  </test> <!-- Test chrome -->
+
+	<!-- <test name="FirefoxTest">
+	 		<parameter name="browser" value="firefox" ></parameter>
+		  <classes>
+		  	<class name="Com.Cristal.Runner.TestRunner" ></class>
+		  	
+		  </classes> 
+	  </test>
+		 Test firefox -->
+</suite> <!-- Suite -->

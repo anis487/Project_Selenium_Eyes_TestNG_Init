@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Testng Cucumber Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Com.Cristal.Runner.TestRunner">
+        <methods>
+          <include name="tearDownr"/>
+          <include name="setUpClass"/>
+          <include name="beforeTestSuite"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="generateHTMLReports"/>
+          <include name="beforeClass"/>
+          <include name="tearDownClass"/>
+          <include name="takeScreenshot"/>
+        </methods>
+      </class> <!-- Com.Cristal.Runner.TestRunner -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Testng Cucumber Suite] -->
